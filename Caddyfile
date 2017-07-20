@@ -1,0 +1,17 @@
+domain.com {
+
+root /var/www/app_dir
+
+gzip
+
+proxy /app1_dir localhost:5000
+proxy /app2_dir localhost:6000
+proxy /app3_dir localhost:7000
+
+log /var/log/caddy/access.log
+errors /var/log/caddy/error.log
+
+#this option will allow you to debug
+errors visible
+
+}
