@@ -2,7 +2,7 @@
 
 Caddy is the HTTP/2 web server with automatic HTTPS which is easy to configure and use. Supervisor is a process control and monitoring system. The benefits of using supervisor are: reboot safe execution, automatic restart after crashes and execution as a non-root user.
 
-In order to run caddy server we need to setup caddy server first. Then we need to configure directories, configuration files, log files and permissions. I have created a script (**provision.sh**) which will manage the configuration files, directories and permission.
+In order to run caddy server we need to setup caddy server first. Then we need to configure directories, configuration files, log files and permissions. I have created a script ``provision.sh`` which will manage the configuration files, directories and permission. This script must be run as **root** user.
 
 ```
 #!/bin/bash
