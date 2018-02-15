@@ -1,0 +1,6 @@
+http:// {
+    root /var/www
+    tls admin@example.com
+    gzip
+    proxy / localhost:3000
+}
