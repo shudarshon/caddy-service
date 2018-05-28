@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #Create necessary directories for caddy
-sudo mkdir /var/www /etc/caddy /etc/ssl/caddy
+sudo mkdir -p /var/www /etc/caddy /etc/ssl/caddy
 
 #Install Caddy
-curl https://getcaddy.com | bash -s personal http.cache,http.expires,http.git,http.minify,http.nobots,http.proxyprotocol,http.realip,http.upload
+curl https://getcaddy.com | bash -s personal
 
 #Allow caddy to use port 80,443
 sudo setcap cap_net_bind_service=+ep `which caddy`
